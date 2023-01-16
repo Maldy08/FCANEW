@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html dir="ltr" lang="en-US">
+<head>
+
+	<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+	<meta name="author" content="SemiColonWeb" />
+
+	<!-- Stylesheets
+	============================================= -->
+	<link href="https://fonts.googleapis.com/css?family=Lato:300,400,400i,700|Poppins:300,400,500,600,700|PT+Serif:400,400i&display=swap" rel="stylesheet" type="text/css" />
+	<link rel="stylesheet" href="css/bootstrap.css" type="text/css" />
+	<link rel="stylesheet" href="style.css" type="text/css" />
+	<link rel="stylesheet" href="css/dark.css" type="text/css" />
+	<link rel="stylesheet" href="css/font-icons.css" type="text/css" />
+	<link rel="stylesheet" href="css/animate.css" type="text/css" />
+	<link rel="stylesheet" href="css/magnific-popup.css" type="text/css" />
+
+	<link rel="stylesheet" href="css/custom.css" type="text/css" />
+	<meta name="viewport" content="width=device-width, initial-scale=1" />
+
+	<!-- Document Title
+	============================================= -->
+	<title>Rotating Text | Canvas</title>
+
+	<style>
+
+		.center-text {
+			position: absolute;
+			top: 50%;
+			left: 50%;
+			transform: translate(-50%, -50%);
+		}
+
+		@-webkit-keyframes rotating /* Safari and Chrome */ {
+		  from {
+		    -webkit-transform: rotate(0deg);
+		    -o-transform: rotate(0deg);
+		    transform: rotate(0deg);
+		  }
+		  to {
+		    -webkit-transform: rotate(360deg);
+		    -o-transform: rotate(360deg);
+		    transform: rotate(360deg);
+		  }
+		}
+		@keyframes rotating {
+		  from {
+		    -ms-transform: rotate(0deg);
+		    -moz-transform: rotate(0deg);
+		    -webkit-transform: rotate(0deg);
+		    -o-transform: rotate(0deg);
+		    transform: rotate(0deg);
+		  }
+		  to {
+		    -ms-transform: rotate(360deg);
+		    -moz-transform: rotate(360deg);
+		    -webkit-transform: rotate(360deg);
+		    -o-transform: rotate(360deg);
+		    transform: rotate(360deg);
+		  }
+		}
+		.rotating {
+		  -webkit-animation: rotating 20s linear infinite;
+		  -moz-animation: rotating 20s linear infinite;
+		  -ms-animation: rotating 20s linear infinite;
+		  -o-animation: rotating 20s linear infinite;
+		  animation: rotating 20s linear infinite;
+		}
+	</style>
+
+</head>
+
+<body class="stretched">
+
+	<!-- Document Wrapper
+	============================================= -->
+	<div id="wrapper" class="clearfix">
+
+		<!-- Content
+		============================================= -->
+		<section id="content">
+			<div class="content-wrap">
+				<div class="container center clearfix">
+
+					<h3>Rotating Circular Text</h3>
+
+					<div class="circular-text position-relative">
+						<h4 id="rotated-text" class="m-0 rotating infinite">
+							Call: +00 11 222 333 | Email: no-reply@canvas.com
+						</h4>
+						<a class="center-text fw-bold h2 text-dark" href="#">24x7</a>
+					</div>
+
+				</div>
+			</div>
+		</section><!-- #content end -->
+
+
+	</div><!-- #wrapper end -->
+
+	<!-- Go To Top
+	============================================= -->
+	<div id="gotoTop" class="icon-angle-up"></div>
+
+	<!-- JavaScripts
+	============================================= -->
+	<script src="js/jquery.js"></script>
+	<script src="js/plugins.min.js"></script>
+
+	<script src="https://cdn.jsdelivr.net/npm/circletype@2.3.0/dist/circletype.min.js"></script>
+
+	<!-- Footer Scripts
+	============================================= -->
+	<script src="js/functions.js"></script>
+
+	<script>
+		const circleType = new CircleType(
+			document.getElementById("rotated-text")
+			).radius(80);
+	</script>
+
+</body>
+</html>

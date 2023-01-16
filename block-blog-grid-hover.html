@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html dir="ltr" lang="en-US">
+<head>
+
+	<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+	<meta name="author" content="SemiColonWeb" />
+
+	<!-- Stylesheets
+	============================================= -->
+	<link href="https://fonts.googleapis.com/css?family=Lato:300,400,400i,700|Poppins:300,400,500,600,700|PT+Serif:400,400i&display=swap" rel="stylesheet" type="text/css" />
+	<link rel="stylesheet" href="css/bootstrap.css" type="text/css" />
+	<link rel="stylesheet" href="style.css" type="text/css" />
+	<link rel="stylesheet" href="css/dark.css" type="text/css" />
+	<link rel="stylesheet" href="css/font-icons.css" type="text/css" />
+	<link rel="stylesheet" href="css/animate.css" type="text/css" />
+	<link rel="stylesheet" href="css/magnific-popup.css" type="text/css" />
+
+	<link rel="stylesheet" href="css/custom.css" type="text/css" />
+	<meta name="viewport" content="width=device-width, initial-scale=1" />
+
+	<!-- Document Title
+	============================================= -->
+	<title>Blog - Grid on Hover | Canvas</title>
+
+	<style>
+
+		/* Image Hover */
+		.hover-reveal {
+			position: fixed;
+			width: 230px;
+			height: 150px;
+			top: 0;
+			left: 0;
+			pointer-events: none;
+			opacity: 0;
+		}
+
+		.hover-reveal__inner,
+		.hover-reveal__img {
+			width: 100%;
+			height: 100%;
+			position: relative;
+		}
+
+		.hover-reveal__img {
+			background-size: cover;
+			background-position: 50% 50%;
+		}
+
+	</style>
+
+</head>
+
+<body class="stretched">
+
+	<!-- Document Wrapper
+	============================================= -->
+	<div id="wrapper" class="clearfix">
+
+		<!-- Content
+		============================================= -->
+		<section id="content">
+			<div class="content-wrap">
+				<div class="container clearfix">
+
+					<!-- Posts
+					============================================= -->
+					<div id="posts" class="post-grid row gutter-50">
+
+						<div class="entry col-lg-3 col-md-4 col-sm-6 col-12 img-hover-block" data-img="images/blog/grid/17.jpg">
+							<div class="grid-inner">
+								<div class="entry-title">
+									<h2><a href="blog-single.html">This is a Standard post with a Preview Image</a></h2>
+								</div>
+								<div class="entry-meta">
+									<ul>
+										<li><i class="icon-calendar3"></i> 10th Feb 2021</li>
+										<li><a href="blog-single.html#comments"><i class="icon-comments"></i> 13</a></li>
+										<li><a href="#"><i class="icon-camera-retro"></i></a></li>
+									</ul>
+								</div>
+								<div class="entry-content">
+									<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ratione, voluptatem, dolorem animi nisi autem blanditiis enim culpa reiciendis et explicabo tenetur!</p>
+									<a href="blog-single.html" class="more-link">Read More</a>
+								</div>
+							</div>
+						</div>
+
+						<div class="entry col-lg-3 col-md-4 col-sm-6 col-12 img-hover-block" data-img="images/blog/grid/10.jpg">
+							<div class="grid-inner">
+								<div class="entry-title">
+									<h2><a href="blog-single-full.html">This is a Standard post with a Vimeo Video</a></h2>
+								</div>
+								<div class="entry-meta">
+									<ul>
+										<li><i class="icon-calendar3"></i> 16th Feb 2021</li>
+										<li><a href="blog-single-full.html#comments"><i class="icon-comments"></i> 19</a></li>
+										<li><a href="#"><i class="icon-film"></i></a></li>
+									</ul>
+								</div>
+								<div class="entry-content">
+									<p>Asperiores, tenetur, blanditiis, quaerat odit ex exercitationem consectetur pariatur quibusdam veritatis quisquam laboriosam esse beatae hic perferendis velit deserunt!</p>
+									<a href="blog-single-full.html" class="more-link">Read More</a>
+								</div>
+							</div>
+						</div>
+
+						<div class="entry col-lg-3 col-md-4 col-sm-6 col-12 img-hover-block" data-img="images/blog/grid/20.jpg">
+							<div class="grid-inner">
+								<div class="entry-title">
+									<h2><a href="blog-single-small.html">This is a Standard post with a Slider Gallery</a></h2>
+								</div>
+								<div class="entry-meta">
+									<ul>
+										<li><i class="icon-calendar3"></i> 24th Feb 2021</li>
+										<li><a href="blog-single-small.html#comments"><i class="icon-comments"></i> 21</a></li>
+										<li><a href="#"><i class="icon-picture"></i></a></li>
+									</ul>
+								</div>
+								<div class="entry-content">
+									<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ratione, voluptatem, dolorem animi nisi autem blanditiis enim culpa reiciendis et explicabo tenetur!</p>
+									<a href="blog-single-small.html" class="more-link">Read More</a>
+								</div>
+							</div>
+						</div>
+
+						<div class="entry col-lg-3 col-md-4 col-sm-6 col-12 img-hover-block" data-img="images/blog/grid/2.jpg">
+							<div class="grid-inner">
+								<div class="entry-title">
+									<h2><a href="blog-single.html">This is an Embedded SoundCloud Post</a></h2>
+								</div>
+								<div class="entry-meta">
+									<ul>
+										<li><i class="icon-calendar3"></i> 28th Apr 2021</li>
+										<li><a href="blog-single.html#comments"><i class="icon-comments"></i> 16</a></li>
+										<li><a href="#"><i class="icon-music2"></i></a></li>
+									</ul>
+								</div>
+								<div class="entry-content">
+									<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ratione, voluptatem, dolorem animi nisi autem blanditiis enim culpa reiciendis et explicabo tenetur!</p>
+									<a href="blog-single.html" class="more-link">Read More</a>
+								</div>
+							</div>
+						</div>
+
+						<div class="entry col-lg-3 col-md-4 col-sm-6 col-12 img-hover-block" data-img="images/blog/grid/3.jpg">
+							<div class="grid-inner">
+								<div class="entry-title">
+									<h2><a href="blog-single-full.html">This is a Standard post with a Youtube Video</a></h2>
+								</div>
+								<div class="entry-meta">
+									<ul>
+										<li><i class="icon-calendar3"></i> 30th Apr 2021</li>
+										<li><a href="blog-single-full.html#comments"><i class="icon-comments"></i> 34</a></li>
+										<li><a href="#"><i class="icon-film"></i></a></li>
+									</ul>
+								</div>
+								<div class="entry-content">
+									<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ratione, voluptatem, dolorem animi nisi autem blanditiis enim culpa reiciendis et explicabo tenetur!</p>
+									<a href="blog-single-full.html" class="more-link">Read More</a>
+								</div>
+							</div>
+						</div>
+
+						<div class="entry col-lg-3 col-md-4 col-sm-6 col-12 img-hover-block" data-img="images/blog/grid/12.jpg">
+							<div class="grid-inner">
+								<div class="entry-title">
+									<h2><a href="blog-single-thumbs.html">This is a Standard post with Fade Gallery</a></h2>
+								</div>
+								<div class="entry-meta">
+									<ul>
+										<li><i class="icon-calendar3"></i> 3rd Mar 2021</li>
+										<li><a href="blog-single-thumbs.html#comments"><i class="icon-comments"></i> 21</a></li>
+										<li><a href="#"><i class="icon-picture"></i></a></li>
+									</ul>
+								</div>
+								<div class="entry-content">
+									<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ratione, voluptatem, dolorem animi nisi autem blanditiis enim culpa reiciendis et explicabo tenetur!</p>
+									<a href="blog-single-thumbs.html" class="more-link">Read More</a>
+								</div>
+							</div>
+						</div>
+
+						<div class="entry col-lg-3 col-md-4 col-sm-6 col-12 img-hover-block" data-img="images/blog/grid/13.jpg">
+							<div class="grid-inner">
+								<div class="entry-title">
+									<h2><a href="blog-single.html">This is a Standard post with another Preview Image</a></h2>
+								</div>
+								<div class="entry-meta">
+									<ul>
+										<li><i class="icon-calendar3"></i> 5th May 2021</li>
+										<li><a href="blog-single.html#comments"><i class="icon-comments"></i> 6</a></li>
+										<li><a href="#"><i class="icon-camera-retro"></i></a></li>
+									</ul>
+								</div>
+								<div class="entry-content">
+									<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ratione, voluptatem, dolorem animi nisi autem blanditiis enim culpa reiciendis et explicabo tenetur!</p>
+									<a href="blog-single.html" class="more-link">Read More</a>
+								</div>
+							</div>
+						</div>
+
+						<div class="entry col-lg-3 col-md-4 col-sm-6 col-12 img-hover-block" data-img="images/blog/grid/21.jpg">
+							<div class="grid-inner">
+								<div class="entry-title">
+									<h2><a href="blog-single-full.html">This is a Standard post with a Dailymotion Video</a></h2>
+								</div>
+								<div class="entry-meta">
+									<ul>
+										<li><i class="icon-calendar3"></i> 11th May 2021</li>
+										<li><a href="blog-single-full.html#comments"><i class="icon-comments"></i> 9</a></li>
+										<li><a href="#"><i class="icon-film"></i></a></li>
+									</ul>
+								</div>
+								<div class="entry-content">
+									<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ratione, voluptatem, dolorem animi nisi autem blanditiis enim culpa reiciendis et explicabo tenetur!</p>
+									<a href="blog-single-full.html" class="more-link">Read More</a>
+								</div>
+							</div>
+						</div>
+
+					</div><!-- #posts end -->
+
+					<!-- Pagination
+					============================================= -->
+					<ul class="pagination mt-5 pagination-circle justify-content-center">
+						<li class="page-item disabled"><a class="page-link" href="#"><i class="icon-angle-left"></i></a></li>
+						<li class="page-item active"><a class="page-link" href="#">1</a></li>
+						<li class="page-item"><a class="page-link" href="#">2</a></li>
+						<li class="page-item"><a class="page-link" href="#">3</a></li>
+						<li class="page-item"><a class="page-link" href="#">4</a></li>
+						<li class="page-item"><a class="page-link" href="#">5</a></li>
+						<li class="page-item"><a class="page-link" href="#"><i class="icon-angle-right"></i></a></li>
+					</ul>
+
+				</div>
+			</div>
+		</section><!-- #content end -->
+
+	</div><!-- #wrapper end -->
+
+	<!-- Go To Top
+	============================================= -->
+	<div id="gotoTop" class="icon-angle-up"></div>
+
+	<!-- JavaScripts
+	============================================= -->
+	<script src="js/jquery.js"></script>
+	<script src="js/plugins.min.js"></script>
+	<script src="demos/burger/js/hover-animate.js"></script>
+
+
+	<!-- Footer Scripts
+	============================================= -->
+	<script src="js/functions.js"></script>
+
+</body>
+</html>

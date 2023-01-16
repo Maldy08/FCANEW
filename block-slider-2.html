@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html dir="ltr" lang="en-US">
+<head>
+
+	<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+	<meta name="author" content="SemiColonWeb" />
+
+	<!-- Stylesheets
+	============================================= -->
+	<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&family=Lato:wght@400;500;600;700&display=swap" rel="stylesheet" type="text/css" />
+	<link rel="stylesheet" href="css/bootstrap.css" type="text/css" />
+	<link rel="stylesheet" href="style.css" type="text/css" />
+	<link rel="stylesheet" href="css/swiper.css" type="text/css" />
+	<link rel="stylesheet" href="css/dark.css" type="text/css" />
+	<link rel="stylesheet" href="css/font-icons.css" type="text/css" />
+	<link rel="stylesheet" href="css/animate.css" type="text/css" />
+	<link rel="stylesheet" href="css/magnific-popup.css" type="text/css" />
+
+	<link rel="stylesheet" href="css/custom.css" type="text/css" />
+	<meta name="viewport" content="width=device-width, initial-scale=1" />
+
+	<!-- Document Title
+	============================================= -->
+	<title>Slider | Canvas</title>
+
+	<style>
+
+		.dark #header-wrap,
+		.block-slider-2.slider-element { background-color: #080E2C; }
+
+		.block-slider-2 .swiper-pagination {
+			--color: #FFF;
+			--gap: 10px;
+			--line-width: 50px;
+			display: flex;
+			width: auto;
+			justify-content: center;
+			counter-reset: item;
+		    bottom: 50px !important;
+		    transform: translateX(-50%);
+		    align-items: center;
+		}
+
+		.block-slider-2 .swiper-pagination,
+		.block-slider-2 .swiper-pagination::before,
+		.block-slider-2 .swiper-pagination::after {
+			position: absolute;
+			left: 50%;
+			transform: translateX(-50%);
+		}
+
+		.block-slider-2 .swiper-pagination::before {
+			content: "";
+			width: var(--line-width, 50px);
+			height: 1px;
+			background-color: var(--color, #FFF);
+		}
+
+		.block-slider-2 .swiper-pagination span::before {
+			content: "0" counter(item);
+			counter-increment: item;
+			font-weight: 700;
+			color: var(--color, #FFF);
+		}
+
+		.block-slider-2 .swiper-pagination::after {
+			content: attr(swiper-slides-total);
+			left: calc(50% + var(--gap, 10px) + var(--line-width, 50px));
+			font-weight: 700;
+			color: var(--color, #FFF);
+			opacity: 0.6;
+		}
+
+		.block-slider-2 .swiper-pagination span {
+			position: absolute;
+			left: calc(50% - var(--gap, 10px) - var(--line-width, 50px));
+			width: auto;
+			height: auto;
+			margin: 0;
+			-webkit-transition: all .3s ease;
+			transition: all .3s ease;
+		}
+
+		.block-slider-2 .swiper-pagination span:not(.swiper-pagination-bullet-active) {
+		    opacity: 0;
+		    -webkit-transform: translateY(-100%);
+		    -ms-transform: translateY(-100%);
+		    transform: translateY(-100%);
+		}
+
+		.block-slider-2 .swiper-pagination span.swiper-pagination-bullet-active ~ .swiper-pagination-bullet {
+		    -webkit-transform: translateY(100%);
+		    -ms-transform: translateY(100%);
+		    transform: translateY(100%);
+		}
+
+		.block-slider-2 .swiper-pagination span,
+		.block-slider-2 .swiper-pagination span:hover,
+		.block-slider-2 .swiper-pagination span.swiper-pagination-bullet-active {
+			background-color: transparent !important;
+			border: 0;
+		}
+	</style>
+
+</head>
+
+<body class="stretched">
+
+	<!-- Document Wrapper
+	============================================= -->
+	<div id="wrapper" class="clearfix">
+
+		<!-- Header
+		============================================= -->
+		<header id="header" class="no-sticky dark border-0">
+			<div id="header-wrap">
+				<div class="container">
+					<div class="header-row">
+
+						<!-- Logo
+						============================================= -->
+						<div id="logo" class="me-lg-5">
+							<a href="index.html" class="standard-logo" data-dark-logo="images/logo-dark.png"><img src="images/logo.png" alt="Canvas Logo"></a>
+							<a href="index.html" class="retina-logo" data-dark-logo="images/logo-dark@2x.png"><img src="images/logo@2x.png" alt="Canvas Logo"></a>
+						</div><!-- #logo end -->
+
+						<div class="header-misc ms-lg-auto">
+
+							<!-- Top Cart
+							============================================= -->
+							<div id="top-cart" class="header-misc-icon">
+								<a href="#" id="top-cart-trigger"><i class="icon-line-bag"></i><span class="top-cart-number">5</span></a>
+								<div class="top-cart-content">
+									<div class="top-cart-title">
+										<h4>Shopping Cart</h4>
+									</div>
+									<div class="top-cart-items">
+										<div class="top-cart-item">
+											<div class="top-cart-item-image">
+												<a href="#"><img src="images/shop/small/1.jpg" alt="Blue Round-Neck Tshirt" /></a>
+											</div>
+											<div class="top-cart-item-desc">
+												<div class="top-cart-item-desc-title">
+													<a href="#">Blue Round-Neck Tshirt with a Button</a>
+													<span class="top-cart-item-price d-block">$19.99</span>
+												</div>
+												<div class="top-cart-item-quantity">x 2</div>
+											</div>
+										</div>
+										<div class="top-cart-item">
+											<div class="top-cart-item-image">
+												<a href="#"><img src="images/shop/small/6.jpg" alt="Light Blue Denim Dress" /></a>
+											</div>
+											<div class="top-cart-item-desc">
+												<div class="top-cart-item-desc-title">
+													<a href="#">Light Blue Denim Dress</a>
+													<span class="top-cart-item-price d-block">$24.99</span>
+												</div>
+												<div class="top-cart-item-quantity">x 3</div>
+											</div>
+										</div>
+									</div>
+									<div class="top-cart-action">
+										<span class="top-checkout-price">$114.95</span>
+										<a href="#" class="button button-3d button-small m-0">View Cart</a>
+									</div>
+								</div>
+							</div><!-- #top-cart end -->
+
+						</div>
+
+						<div id="primary-menu-trigger">
+							<svg class="svg-trigger" viewBox="0 0 100 100"><path d="m 30,33 h 40 c 3.722839,0 7.5,3.126468 7.5,8.578427 0,5.451959 -2.727029,8.421573 -7.5,8.421573 h -20"></path><path d="m 30,50 h 40"></path><path d="m 70,67 h -40 c 0,0 -7.5,-0.802118 -7.5,-8.365747 0,-7.563629 7.5,-8.634253 7.5,-8.634253 h 20"></path></svg>
+						</div>
+
+						<!-- Primary Navigation
+						============================================= -->
+						<nav class="primary-menu">
+
+							<ul class="menu-container">
+								<li class="menu-item">
+									<a class="menu-link" href="index.html"><div>Home</div></a>
+								</li>
+								<li class="menu-item">
+									<a class="menu-link" href="index.html"><div>Men</div></a>
+								</li>
+								<li class="menu-item">
+									<a class="menu-link" href="index.html"><div>Women</div></a>
+								</li>
+								<li class="menu-item">
+									<a class="menu-link" href="index.html"><div>Kids</div></a>
+								</li>
+							</ul>
+
+						</nav><!-- #primary-menu end -->
+					</div>
+				</div>
+			</div>
+			<div class="header-wrap-clone"></div>
+		</header><!-- #header end -->
+
+		<!-- Hero Section
+		============================================= -->
+		<section id="slider" class="slider-element block-slider-2" style="background: rgb(255,255,255); background: linear-gradient(0deg, rgba(255,255,255,0) 0%, rgba(255,255,255,0) 25%, #080E2C 25%);">
+
+			<div class="container">
+				<div class="swiper_wrapper min-vh-60 min-vh-lg-75" data-loop="true">
+
+				<div class="swiper-container swiper-parent">
+					<div class="swiper-wrapper">
+						<div class="swiper-slide dark">
+							<div class="container">
+								<div class="slider-caption slider-caption-center">
+									<p class="mb-4 text-white text-smaller text-uppercase ls4" data-animate="fadeInUpSmall">Shop for Men</p>
+									<div class="overflow-hidden"><h2 data-animate="fadeInUpSmall" data-delay="200">Your feet will never <br>look the same again.</h2></div>
+									<div class="overflow-hidden">
+										<a href="#" class="button button-border button-light button-rounded button-large ms-0 topmargin-sm" data-animate="fadeInUpSmall" data-delay="400">Shop Now</a>
+									</div>
+								</div>
+							</div>
+							<div class="swiper-slide-bg" style="background-image: url('images/blocks/preview/slider-2/1.jpg');"></div>
+						</div>
+
+						<!-- Slide 2 -->
+						<div class="swiper-slide dark">
+							<div class="container">
+								<div class="slider-caption slider-caption-center">
+									<p class="mb-4 text-white text-smaller text-uppercase ls4" data-animate="fadeInUpSmall">Shop for Women</p>
+									<div class="overflow-hidden"><h2 data-animate="fadeInUpSmall" data-delay="200">You will be able to go anywhere.</h2></div>
+									<div class="overflow-hidden">
+										<a href="#" class="button button-border button-light button-rounded button-large ms-0 topmargin-sm" data-animate="fadeInUpSmall" data-delay="400">Shop Now</a>
+									</div>
+								</div>
+							</div>
+							<div class="swiper-slide-bg" style="background-image: url('images/blocks/preview/slider-2/2.jpg');"></div>
+						</div>
+
+						<!-- Slide 2 -->
+						<div class="swiper-slide dark">
+							<div class="container">
+								<div class="slider-caption slider-caption-center">
+									<p class="mb-4 text-white text-smaller text-uppercase ls4" data-animate="fadeInUpSmall">Shop for Kids</p>
+									<div class="overflow-hidden"><h2 data-animate="fadeInUpSmall" data-delay="200">Bring power to your steps</h2></div>
+									<div class="overflow-hidden">
+										<a href="#" class="button button-border button-light button-rounded button-large ms-0 topmargin-sm" data-animate="fadeInUpSmall" data-delay="400">Shop Now</a>
+									</div>
+								</div>
+							</div>
+							<div class="swiper-slide-bg" style="background-image: url('images/blocks/preview/slider-2/3.jpg');"></div>
+						</div>
+
+					</div>
+				</div>
+
+				<div class="slider-arrow-left"><i class="icon-angle-left"></i></div>
+				<div class="slider-arrow-right"><i class="icon-angle-right"></i></div>
+				<!-- <div class="slide-number font-secondary"><div class="slide-number-current"></div><span></span><div class="slide-number-total op-05"></div></div> -->
+				<div class="swiper-pagination" swiper-slides-total="03"></div>
+			</div>
+			</div>
+
+		</section>
+
+		<!-- Content
+		============================================= -->
+		<section id="content">
+			<div class="content-wrap py-0">
+				<div class="row justify-content-center align-items-center text-center min-vh-100">
+					<div class="col-12 display-3">Content <br>...</div>
+				</div>
+			</div>
+		</section><!-- #content end -->
+
+
+	</div><!-- #wrapper end -->
+
+	<!-- Go To Top
+	============================================= -->
+	<div id="gotoTop" class="icon-angle-up"></div>
+
+	<!-- JavaScripts
+	============================================= -->
+	<script src="js/jquery.js"></script>
+	<script src="js/plugins.min.js"></script>
+
+	<script src="js/jquery.hotspot.js"></script>
+
+	<!-- Footer Scripts
+	============================================= -->
+	<script src="js/functions.js"></script>
+
+</body>
+</html>

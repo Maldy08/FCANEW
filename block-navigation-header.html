@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html dir="ltr" lang="en-US">
+<head>
+
+	<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+	<meta name="author" content="SemiColonWeb" />
+
+	<!-- Stylesheets
+	============================================= -->
+	<link href="https://fonts.googleapis.com/css2?family=Noto+Sans:wght@400;700&family=Noto+Serif:ital,wght@1,700&display=swap"
+		rel="stylesheet">
+	<link rel="stylesheet" href="css/bootstrap.css" type="text/css" />
+	<link rel="stylesheet" href="style.css" type="text/css" />
+	<link rel="stylesheet" href="css/swiper.css" type="text/css" />
+	<link rel="stylesheet" href="css/dark.css" type="text/css" />
+	<link rel="stylesheet" href="css/font-icons.css" type="text/css" />
+	<link rel="stylesheet" href="css/animate.css" type="text/css" />
+	<link rel="stylesheet" href="css/magnific-popup.css" type="text/css" />
+
+	<link rel="stylesheet" href="css/custom.css" type="text/css" />
+	<meta name="viewport" content="width=device-width, initial-scale=1" />
+
+	<!-- Document Title
+	============================================= -->
+	<title>Header - Navigation | Canvas</title>
+
+	<style>
+		@media (min-width: 992px) {
+
+			.block-nav-header .bg-white-light {
+				background-color: #E5E3CE;
+				border-bottom-right-radius: 0.5rem !important;
+				border-bottom-left-radius: 0.5rem !important;
+			}
+
+			.block-nav-header #top-bar.transparent-topbar {
+				z-index: 399;
+				border-bottom: 0;
+				background: transparent !important;
+			}
+
+			.block-nav-header .transparent-topbar + .transparent-header + #content {
+				margin-top: -146px; /*  #header(height) + #top-bar(height) */
+			}
+
+		}
+
+		.block-nav-header .top-links li:hover {
+			background-color: rgba(0,0,0,0.15);
+		}
+
+		.block-nav-header #top-social li,
+		.block-nav-header .top-links-item {
+			border-left-color: rgba(0,0,0,0.1);
+		}
+
+	</style>
+
+</head>
+
+<body class="stretched block-nav-header">
+
+	<!-- Document Wrapper
+	============================================= -->
+	<div id="wrapper" class="clearfix">
+
+		<!-- Top Bar
+		============================================= -->
+		<div id="top-bar" class="transparent-topbar">
+			<div class="container">
+
+				<div class="row justify-content-end g-0">
+					<div class="col-xl-7 col-lg-9 bg-white-light">
+						<div class="row justify-content-between align-items-center px-3">
+
+							<div class="col-12 col-md-auto">
+
+								<!-- Top Links
+										============================================= -->
+								<div class="top-links">
+									<ul class="top-links-container">
+										<li class="top-links-item"><a href="demo-travel.html">Home</a></li>
+										<li class="top-links-item"><a href="faqs.html">FAQs</a></li>
+										<li class="top-links-item"><a href="#">USD</a>
+											<ul class="top-links-sub-menu">
+												<li class="top-links-item"><a href="#">EUR</a></li>
+												<li class="top-links-item"><a href="#">AUD</a></li>
+												<li class="top-links-item"><a href="#">GBP</a></li>
+											</ul>
+										</li>
+									</ul>
+								</div><!-- .top-links end -->
+
+							</div>
+
+							<div class="col-12 col-md-auto">
+
+								<!-- Top Social
+										============================================= -->
+								<ul id="top-social">
+									<li><a href="#" class="si-facebook"><span class="ts-icon"><i class="icon-facebook"></i></span><span
+												class="ts-text">Facebook</span></a></li>
+									<li><a href="#" class="si-twitter"><span class="ts-icon"><i class="icon-twitter"></i></span><span
+												class="ts-text">Twitter</span></a></li>
+									<li><a href="#" class="si-pinterest"><span class="ts-icon"><i
+													class="icon-pinterest"></i></span><span class="ts-text">Pinterest</span></a></li>
+									<li><a href="#" class="si-instagram"><span class="ts-icon"><i
+													class="icon-instagram2"></i></span><span class="ts-text">Instagram</span></a></li>
+								</ul><!-- #top-social end -->
+
+							</div>
+
+							<div class="col-12 col-md-auto d-flex justify-content-center">
+								<h5 class="mb-0 py-2 fw-medium">Mon to Fri: 10:00 – 19:00</h5>
+							</div>
+						</div>
+					</div>
+				</div>
+
+			</div>
+		</div><!-- #top-bar end -->
+
+		<!-- Header
+		============================================= -->
+		<header id="header" class="transparent-header dark">
+			<div id="header-wrap">
+				<div class="container">
+					<div class="header-row">
+
+						<!-- Logo
+								============================================= -->
+						<div id="logo">
+							<a href="index.html" class="standard-logo" data-dark-logo="images/logo-dark.png"><img
+									src="images/logo.png" alt="Canvas Logo"></a>
+							<a href="index.html" class="retina-logo" data-dark-logo="images/logo-dark@2x.png"><img
+									src="images/logo@2x.png" alt="Canvas Logo"></a>
+						</div><!-- #logo end -->
+
+						<div class="header-misc">
+
+							<!-- Top Search
+									============================================= -->
+							<div id="top-search" class="header-misc-icon">
+								<a href="#" id="top-search-trigger"><i class="icon-line-search"></i><i
+										class="icon-line-cross"></i></a>
+							</div><!-- #top-search end -->
+
+						</div>
+
+						<div id="primary-menu-trigger">
+							<svg class="svg-trigger" viewBox="0 0 100 100">
+								<path
+									d="m 30,33 h 40 c 3.722839,0 7.5,3.126468 7.5,8.578427 0,5.451959 -2.727029,8.421573 -7.5,8.421573 h -20">
+								</path>
+								<path d="m 30,50 h 40"></path>
+								<path
+									d="m 70,67 h -40 c 0,0 -7.5,-0.802118 -7.5,-8.365747 0,-7.563629 7.5,-8.634253 7.5,-8.634253 h 20">
+								</path>
+							</svg>
+						</div>
+
+						<!-- Primary Navigation
+								============================================= -->
+						<nav class="primary-menu with-arrows">
+
+							<ul class="menu-container">
+								<li class="menu-item">
+									<a class="menu-link" href="demo-seo.html">
+										<div>Home</div>
+									</a>
+								</li>
+								<li class="menu-item">
+									<a href="#" class="menu-link">
+										<div>About</div>
+									</a>
+								</li>
+								<li class="menu-item">
+									<a class="menu-link" href="demo-seo-faqs.html">
+										<div>FAQs</div>
+									</a>
+								</li>
+								<li class="menu-item">
+									<a class="menu-link" href="demo-seo-contact.html">
+										<div>Contact</div>
+									</a>
+								</li>
+							</ul>
+
+						</nav><!-- #primary-menu end -->
+
+						<form class="top-search-form" action="search.html" method="get">
+							<input type="text" name="q" class="form-control" value="" placeholder="Type &amp; Hit Enter.."
+								autocomplete="off">
+						</form>
+
+					</div>
+				</div>
+			</div>
+			<div class="header-wrap-clone"></div>
+		</header><!-- #header end -->
+
+		<!-- Content
+		============================================= -->
+		<section id="content" style="background-image: radial-gradient(circle at top right, rgb(35,58,72) 0%, rgb(35,58,72) 28%,rgb(67,110,103) 28%, rgb(67,110,103) 45%,rgb(108,149,133) 45%, rgb(108,149,133) 63%,rgb(185,198,165) 63%, rgb(185,198,165) 100%);">
+			<div class="content-wrap dark py-0">
+				<div class="row justify-content-center align-items-center text-center min-vh-100">
+					<h1 class="col-12 display-3 mb-0">Content <br>...</h1>
+				</div>
+			</div>
+		</section><!-- #content end -->
+
+	</div><!-- #wrapper end -->
+
+	<!-- Go To Top
+	============================================= -->
+	<div id="gotoTop" class="icon-angle-up"></div>
+
+	<!-- JavaScripts
+	============================================= -->
+	<script src="js/jquery.js"></script>
+	<script src="js/plugins.min.js"></script>
+
+	<!-- Footer Scripts
+	============================================= -->
+	<script src="js/functions.js"></script>
+
+</body>
+</html>

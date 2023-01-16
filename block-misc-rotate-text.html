@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html dir="ltr" lang="en-US">
+<head>
+
+	<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+	<meta name="author" content="SemiColonWeb" />
+
+	<!-- Stylesheets
+	============================================= -->
+	<link href="https://fonts.googleapis.com/css?family=Lato:300,400,400i,700|Poppins:300,400,500,600,700|PT+Serif:400,400i&display=swap" rel="stylesheet" type="text/css" />
+	<link rel="stylesheet" href="css/bootstrap.css" type="text/css" />
+	<link rel="stylesheet" href="style.css" type="text/css" />
+	<link rel="stylesheet" href="css/dark.css" type="text/css" />
+	<link rel="stylesheet" href="css/font-icons.css" type="text/css" />
+	<link rel="stylesheet" href="css/animate.css" type="text/css" />
+	<link rel="stylesheet" href="css/magnific-popup.css" type="text/css" />
+
+	<link rel="stylesheet" href="css/custom.css" type="text/css" />
+	<meta name="viewport" content="width=device-width, initial-scale=1" />
+
+	<!-- Document Title
+	============================================= -->
+	<title>Rotate onScroll | Canvas</title>
+
+	<style>
+
+		.center-text {
+			position: absolute;
+			top: 50%;
+			left: 50%;
+			transform: translate(-50%, -50%);
+		}
+	</style>
+
+</head>
+
+<body class="stretched">
+
+	<!-- Document Wrapper
+	============================================= -->
+	<div id="wrapper" class="clearfix">
+
+		<!-- Content
+		============================================= -->
+		<section id="content">
+			<div class="content-wrap bg-light overflow-visible">
+				<div class="container clearfix">
+
+					<div class="min-vh-25"></div>
+
+					<h3>Rotate Circular Text On Scroll Effect</h3>
+
+					<div class="circular-text position-fixed" style="min-width: 300px; max-height: 300px; top: 20px; right: 20px;">
+						<div>
+							<h4 id="rotated-text" class="parallax m-0" data-0="transform: rotate(0deg);" data-end="transform: rotate(360deg);">
+								 Corporate | Portfolio | Business | Real Estate | Medical | Construction |
+							</h4>
+							<h2 class="center-text mb-0">Demos</h2>
+						</div>
+					</div>
+
+					<div style="height: 1000px;"></div>
+
+				</div>
+			</div>
+		</section><!-- #content end -->
+
+
+	</div><!-- #wrapper end -->
+
+	<!-- Go To Top
+	============================================= -->
+	<div id="gotoTop" class="icon-angle-up"></div>
+
+	<!-- JavaScripts
+	============================================= -->
+	<script src="js/jquery.js"></script>
+	<script src="js/plugins.min.js"></script>
+
+	<script src="https://cdn.jsdelivr.net/npm/circletype@2.3.0/dist/circletype.min.js"></script>
+
+	<!-- Footer Scripts
+	============================================= -->
+	<script src="js/functions.js"></script>
+
+	<script>
+		const circleType = new CircleType(
+			document.getElementById("rotated-text")
+			).radius(80);
+	</script>
+
+</body>
+</html>

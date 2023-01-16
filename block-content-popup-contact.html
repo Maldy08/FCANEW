@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html dir="ltr" lang="en-US">
+<head>
+
+	<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+	<meta name="author" content="SemiColonWeb" />
+
+	<!-- Stylesheets
+	============================================= -->
+	<link href="https://fonts.googleapis.com/css?family=Lato:300,400,400i,700|Poppins:300,400,500,600,700|PT+Serif:400,400i&display=swap" rel="stylesheet" type="text/css" />
+	<link rel="stylesheet" href="css/bootstrap.css" type="text/css" />
+	<link rel="stylesheet" href="style.css" type="text/css" />
+	<link rel="stylesheet" href="css/dark.css" type="text/css" />
+	<link rel="stylesheet" href="css/font-icons.css" type="text/css" />
+	<link rel="stylesheet" href="css/animate.css" type="text/css" />
+	<link rel="stylesheet" href="css/magnific-popup.css" type="text/css" />
+
+	<link rel="stylesheet" href="css/custom.css" type="text/css" />
+	<meta name="viewport" content="width=device-width, initial-scale=1" />
+
+	<!-- Document Title
+	============================================= -->
+	<title>Popup | Canvas</title>
+
+</head>
+
+<body class="stretched ">
+
+	<!-- Document Wrapper
+	============================================= -->
+	<div id="wrapper" class="clearfix">
+
+		<!-- Content
+		============================================= -->
+		<section id="content">
+			<div class="content-wrap py-0">
+
+				<div class="d-flex align-items-center justify-content-center min-vh-100">
+					<a href="#block-modal-contact" data-lightbox="inline" class="button button-xlarge rounded-pill bg-primary nott ls0 px-6 py-3">Contact Us</a>
+				</div>
+
+				<div class="modal-on-load" data-target="#block-modal-contact"></div>
+
+				<!-- Modal -->
+				<div class="modal1 mfp-hide" id="block-modal-contact">
+					<div class="modal-dialog modal-dialog-centered modal-lg">
+						<div class="modal-content bg-white rounded">
+
+							<div class="row m-0">
+								<div class="col-lg-6 d-flex align-items-center bg-light">
+									<img src="images/blocks/preview/popups/popup-contact.svg" alt="Image" class="">
+								</div>
+								<div class="col-lg-6 p-5">
+									<h3 class="mb-3">Do you want to Contact with us?</h3>
+									<p class="mb-4 op-07">Lorem ipsum adipisicing elit dolores neque.</p>
+									<div class="form-widget">
+
+										<div class="form-result"></div>
+
+										<form class="mb-0" id="block-contactform" name="block-contactform" action="include/form.php" method="post">
+
+											<div class="form-process">
+												<div class="css3-spinner">
+													<div class="css3-spinner-scaler"></div>
+												</div>
+											</div>
+
+											<div class="row">
+												<div class="col-12 form-group">
+													<label class="nott ls0 fw-medium mb-1" for="block-contactform-name">Name <small>*</small></label>
+													<input type="text" id="block-contactform-name" name="block-contactform-name" value="" class="form-control required" />
+												</div>
+
+												<div class="col-12 form-group">
+													<label class="nott ls0 fw-medium mb-1" for="block-contactform-email">Email <small>*</small></label>
+													<input type="email" id="block-contactform-email" name="block-contactform-email" value="" class="required email form-control" />
+												</div>
+
+												<div class="col-12 form-group">
+													<label class="nott ls0 fw-medium mb-1" for="block-contactform-message">Message <small>*</small></label>
+													<textarea class="required form-control" id="block-contactform-message" name="block-contactform-message" rows="3" cols="30"></textarea>
+												</div>
+
+												<div class="col-12 form-group d-none">
+													<input type="text" id="block-contactform-botcheck" name="block-contactform-botcheck" value="" class="form-control" />
+												</div>
+
+												<div class="col-12 d-flex justify-content-end">
+													<button class="btn w-100 btn-primary py-2 mx-0" type="submit" id="block-contactform-submit" name="block-contactform-submit" value="submit">Send Message</button>
+												</div>
+											</div>
+
+											<input type="hidden" name="prefix" value="block-contactform-">
+
+										</form>
+									</div>
+								</div>
+							</div>
+
+						</div>
+					</div>
+				</div>
+
+			</div>
+		</section><!-- #content end -->
+
+
+	</div><!-- #wrapper end -->
+
+	<!-- Go To Top
+	============================================= -->
+	<div id="gotoTop" class="icon-angle-up"></div>
+
+	<!-- JavaScripts
+	============================================= -->
+	<script src="js/jquery.js"></script>
+	<script src="js/plugins.min.js"></script>
+
+	<!-- Footer Scripts
+	============================================= -->
+	<script src="js/functions.js"></script>
+
+	<script>
+		jQuery(document).ready( function(){
+
+			$('#block-contactform').on( 'formSubmitSuccess', function(){
+				setTimeout(function(){
+ 					$('#block-modal-contact').magnificPopup('close');
+  				}, 500);
+			});
+
+		});
+	</script>
+
+</body>
+</html>

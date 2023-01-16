@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html dir="ltr" lang="en-US">
+<head>
+
+	<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+	<meta name="author" content="SemiColonWeb" />
+
+	<!-- Stylesheets
+	============================================= -->
+	<link href="https://fonts.googleapis.com/css?family=Lato:300,400,400i,700|Poppins:300,400,500,600,700|PT+Serif:400,400i&display=swap" rel="stylesheet" type="text/css" />
+	<link rel="stylesheet" href="css/bootstrap.css" type="text/css" />
+	<link rel="stylesheet" href="style.css" type="text/css" />
+	<link rel="stylesheet" href="css/dark.css" type="text/css" />
+	<link rel="stylesheet" href="css/font-icons.css" type="text/css" />
+	<link rel="stylesheet" href="css/animate.css" type="text/css" />
+	<link rel="stylesheet" href="css/magnific-popup.css" type="text/css" />
+
+	<link rel="stylesheet" href="css/custom.css" type="text/css" />
+	<meta name="viewport" content="width=device-width, initial-scale=1" />
+
+	<!-- Document Title
+	============================================= -->
+	<title>Social Icons | Canvas</title>
+
+	<style>
+
+		.si-box {
+			display: flex;
+			display: -ms-flexbox;
+		}
+
+		.si-checkbox {
+			position: relative;
+			width: 40px; /* Social Icons Size */
+			height: 40px; /* Social Icons Size */
+			outline: none;
+			background-color: #EEE;
+			-webkit-appearance: none;
+			cursor: pointer;
+		}
+
+		.si-checkbox::before {
+			content: "\e9d1";
+			position: absolute;
+			top: 50%;
+			left: 50%;
+			transform: translate(-50%, -50%);
+			text-align: center;
+			font-size: 1.25rem;
+			font-family: "lined-icons";
+		}
+
+		.si-checkbox:checked::before { content: "\ea11"; }
+
+		.social-menus {
+			position: relative;
+			display: flex;
+			display: -ms-flexbox;
+			overflow: hidden;
+			width: 0;
+			transition: width .2s, height .2s;
+		}
+
+		.si-checkbox:checked ~ .social-menus {
+			width: 200px; /* Social Icons width x quantity (eg: 40x5) */
+		}
+
+		/* Vertical */
+		.flex-column .social-menus {
+			-ms-flex-direction: column;
+			flex-direction: column;
+			width: auto;
+			height: 0;
+		}
+
+		.flex-column .si-checkbox:checked ~ .social-menus {
+			height: 200px;/* Social Icons height x quantity (eg: 40x5) */
+		}
+
+	</style>
+
+</head>
+
+<body class="stretched">
+
+	<!-- Document Wrapper
+	============================================= -->
+	<div id="wrapper" class="clearfix">
+
+		<!-- Content
+		============================================= -->
+		<section id="content">
+			<div class="content-wrap">
+				<div class="container clearfix">
+
+					<div class="row">
+						<div class="col-md-6">
+							<h3>Horizontal</h3>
+							<div class="si-box">
+								<input type="checkbox" name="" class="si-checkbox">
+								<div class="social-menus">
+									<a href="#" class="social-icon si-colored m-0 rounded-0 si-facebook">
+										<i class="icon-facebook"></i>
+										<i class="icon-facebook"></i>
+									</a>
+									<a href="#" class="social-icon si-colored m-0 rounded-0 si-twitter">
+										<i class="icon-twitter"></i>
+										<i class="icon-twitter"></i>
+									</a>
+									<a href="#" class="social-icon si-colored m-0 rounded-0 si-pinterest">
+										<i class="icon-pinterest"></i>
+										<i class="icon-pinterest"></i>
+									</a>
+									<a href="#" class="social-icon si-colored m-0 rounded-0 si-rss">
+										<i class="icon-rss"></i>
+										<i class="icon-rss"></i>
+									</a>
+									<a href="#" class="social-icon si-colored m-0 rounded-0 si-call">
+										<i class="icon-call"></i>
+										<i class="icon-call"></i>
+									</a>
+								</div>
+							</div>
+
+						</div>
+
+						<div class="col-md-6">
+							<h3>Vertical</h3>
+							<div class="si-box flex-column">
+								<input type="checkbox" name="" class="si-checkbox">
+								<div class="social-menus">
+									<a href="#" class="social-icon si-colored m-0 rounded-0 si-facebook">
+										<i class="icon-facebook"></i>
+										<i class="icon-facebook"></i>
+									</a>
+									<a href="#" class="social-icon si-colored m-0 rounded-0 si-twitter">
+										<i class="icon-twitter"></i>
+										<i class="icon-twitter"></i>
+									</a>
+									<a href="#" class="social-icon si-colored m-0 rounded-0 si-pinterest">
+										<i class="icon-pinterest"></i>
+										<i class="icon-pinterest"></i>
+									</a>
+									<a href="#" class="social-icon si-colored m-0 rounded-0 si-rss">
+										<i class="icon-rss"></i>
+										<i class="icon-rss"></i>
+									</a>
+									<a href="#" class="social-icon si-colored m-0 rounded-0 si-call">
+										<i class="icon-call"></i>
+										<i class="icon-call"></i>
+									</a>
+								</div>
+							</div>
+						</div>
+					</div>
+
+				</div>
+			</div>
+		</section><!-- #content end -->
+
+
+	</div><!-- #wrapper end -->
+
+	<!-- Go To Top
+	============================================= -->
+	<div id="gotoTop" class="icon-angle-up"></div>
+
+	<!-- JavaScripts
+	============================================= -->
+	<script src="js/jquery.js"></script>
+	<script src="js/plugins.min.js"></script>
+
+	<!-- Footer Scripts
+	============================================= -->
+	<script src="js/functions.js"></script>
+
+	<script>
+
+	</script>
+
+</body>
+</html>

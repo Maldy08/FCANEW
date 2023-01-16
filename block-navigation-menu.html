@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html dir="ltr" lang="en-US">
+<head>
+
+	<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+	<meta name="author" content="SemiColonWeb" />
+
+	<!-- Stylesheets
+	============================================= -->
+	<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&family=Lato:wght@400;500;600;700&display=swap" rel="stylesheet" type="text/css" />
+	<link rel="stylesheet" href="css/bootstrap.css" type="text/css" />
+	<link rel="stylesheet" href="style.css" type="text/css" />
+	<link rel="stylesheet" href="css/swiper.css" type="text/css" />
+	<link rel="stylesheet" href="css/dark.css" type="text/css" />
+	<link rel="stylesheet" href="css/font-icons.css" type="text/css" />
+	<link rel="stylesheet" href="css/animate.css" type="text/css" />
+	<link rel="stylesheet" href="css/magnific-popup.css" type="text/css" />
+
+	<link rel="stylesheet" href="css/custom.css" type="text/css" />
+	<meta name="viewport" content="width=device-width, initial-scale=1" />
+
+	<!-- Document Title
+	============================================= -->
+	<title>Menu - Navigation | Canvas</title>
+
+	<style>
+		@media (min-width: 992px) {
+			.block-nav-menu .menu-item .menu-link { position: relative; }
+
+			.block-nav-menu .menu-item .menu-link::before {
+				content: '';
+			    position: absolute;
+			    opacity: 0;
+			    top: 50%;
+			    left: 0;
+			    width: 100%;
+			    height: 50%;
+			    background-color: #1ABC9C;
+			    transform: translateY(-50%) skew(2deg) rotate(-2deg);
+			    transition: opacity .1s;
+			    z-index: 0;
+			}
+
+			.block-nav-menu .sub-menu-container .menu-item > .menu-link::before {
+				top: 0;
+				height: 100%;
+				transform: translateY(0) skew(2deg) rotate(-2deg);
+				background-color: #F5F5F5;
+			}
+
+			.dark .block-nav-menu .sub-menu-container .menu-item > .menu-link::before {
+				background-color: rgba(0, 0, 0, 0.15);
+			}
+
+			.block-nav-menu .sub-menu-container .menu-item:hover > .menu-link { background-color: transparent; }
+
+			.dark .block-nav-menu .menu-container > .menu-item:hover > .menu-link,
+			.dark .block-nav-menu .menu-container > .menu-item.current > .menu-link,
+			.block-nav-menu .menu-container > .menu-item:hover > .menu-link,
+			.block-nav-menu .menu-container > .menu-item.current > .menu-link { color: #EEE; }
+
+			.block-nav-menu .menu-item:hover > .menu-link::before,
+			.block-nav-menu .menu-item.current > .menu-link::before {
+				opacity: 1;
+			}
+
+			.block-nav-menu .menu-item > .menu-link > div {
+				position: relative;
+				z-index: 2;
+			}
+		}
+	</style>
+
+</head>
+
+<body class="stretched">
+
+	<!-- Document Wrapper
+	============================================= -->
+	<div id="wrapper" class="clearfix">
+
+		<!-- Section Light -->
+		<div class="d-lg-flex flex-column justify-content-lg-center min-vh-100 min-vh-lg-50 ">
+
+			<!-- Primary Navigation icon in mobile
+			============================================= -->
+			<div id="primary-menu-trigger">
+				<svg class="svg-trigger" viewBox="0 0 100 100"><path d="m 30,33 h 40 c 3.722839,0 7.5,3.126468 7.5,8.578427 0,5.451959 -2.727029,8.421573 -7.5,8.421573 h -20"></path><path d="m 30,50 h 40"></path><path d="m 70,67 h -40 c 0,0 -7.5,-0.802118 -7.5,-8.365747 0,-7.563629 7.5,-8.634253 7.5,-8.634253 h 20"></path></svg>
+			</div>
+
+			<!-- Primary Navigation
+			============================================= -->
+			<nav class="primary-menu with-arrows block-nav-menu">
+
+				<ul class="menu-container justify-content-center"> <!-- justify-content-center class for center menu-->
+					<li class="menu-item current">
+						<a class="menu-link" href="#"><div>Home</div></a>
+					</li>
+					<li class="menu-item">
+						<a class="menu-link" href="#"><div>Features</div></a>
+						<ul class="sub-menu-container">
+							<li class="menu-item">
+								<a class="menu-link" href="#"><div><i class="icon-stack"></i>Dropdown 1</div></a>
+							</li>
+							<li class="menu-item">
+								<a class="menu-link" href="#"><div><i class="icon-umbrella"></i>Dropdown 2</div></a>
+							</li>
+						</ul>
+					</li>
+					<li class="menu-item">
+						<a class="menu-link" href="#"><div>Pages</div></a>
+					</li>
+					<li class="menu-item">
+						<a class="menu-link" href="#"><div>Portfolio</div></a>
+					</li>
+					<li class="menu-item">
+						<a class="menu-link" href="#"><div>Blog</div></a>
+					</li>
+					<li class="menu-item">
+						<a class="menu-link" href="#"><div>Shop</div></a>
+					</li>
+					<li class="menu-item mega-menu">
+						<a class="menu-link" href="#"><div>Shortcodes</div></a>
+					</li>
+				</ul>
+
+			</nav><!-- #primary-menu end -->
+
+		</div>
+
+		<!-- Section Dark -->
+		<div class="section dark m-0 min-vh-50 overflow-visible d-none d-lg-flex flex-column justify-content-center">
+
+			<!-- Primary Navigation icon in mobile
+			============================================= -->
+			<div id="primary-menu-trigger">
+				<svg class="svg-trigger" viewBox="0 0 100 100"><path d="m 30,33 h 40 c 3.722839,0 7.5,3.126468 7.5,8.578427 0,5.451959 -2.727029,8.421573 -7.5,8.421573 h -20"></path><path d="m 30,50 h 40"></path><path d="m 70,67 h -40 c 0,0 -7.5,-0.802118 -7.5,-8.365747 0,-7.563629 7.5,-8.634253 7.5,-8.634253 h 20"></path></svg>
+			</div>
+
+			<!-- Primary Navigation
+			============================================= -->
+			<nav class="primary-menu with-arrows block-nav-menu">
+
+				<ul class="menu-container justify-content-center"> <!-- justify-content-center class for center menu-->
+					<li class="menu-item current">
+						<a class="menu-link" href="#"><div>Home</div></a>
+					</li>
+					<li class="menu-item">
+						<a class="menu-link" href="#"><div>Features</div></a>
+						<ul class="sub-menu-container">
+							<li class="menu-item">
+								<a class="menu-link" href="#"><div><i class="icon-stack"></i>Dropdown 1</div></a>
+							</li>
+							<li class="menu-item">
+								<a class="menu-link" href="#"><div><i class="icon-umbrella"></i>Dropdown 2</div></a>
+							</li>
+						</ul>
+					</li>
+					<li class="menu-item">
+						<a class="menu-link" href="#"><div>Pages</div></a>
+					</li>
+					<li class="menu-item">
+						<a class="menu-link" href="#"><div>Portfolio</div></a>
+					</li>
+					<li class="menu-item">
+						<a class="menu-link" href="#"><div>Blog</div></a>
+					</li>
+					<li class="menu-item">
+						<a class="menu-link" href="#"><div>Shop</div></a>
+					</li>
+					<li class="menu-item mega-menu">
+						<a class="menu-link" href="#"><div>Shortcodes</div></a>
+					</li>
+				</ul>
+
+			</nav><!-- #primary-menu end -->
+
+		</div>
+
+	</div><!-- #wrapper end -->
+
+	<!-- Go To Top
+	============================================= -->
+	<div id="gotoTop" class="icon-angle-up"></div>
+
+	<!-- JavaScripts
+	============================================= -->
+	<script src="js/jquery.js"></script>
+	<script src="js/plugins.min.js"></script>
+
+	<!-- Footer Scripts
+	============================================= -->
+	<script src="js/functions.js"></script>
+
+</body>
+</html>
