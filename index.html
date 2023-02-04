@@ -161,7 +161,7 @@
 											</ul>
 										</li>
 										<li class="menu-item">
-											<a class="menu-link" href="https://tutorias.uabc.mx" target="_blank"><div>Portal Tutorias</div></a>
+											<a class="menu-link" href="alumnos/tutorias.html" target="_blank"><div>Tutorias</div></a>
 										</li>	
 										<li class="menu-item">
 											<a class="menu-link" href="alumnos/reinscripciones-horarios-calendario.html" target="_blank"><div>Reinscripciones, Horarios y Calendario de Exámenes...</div></a>
@@ -338,6 +338,13 @@
 										<div class="swiper-slide-bg" style="background-image: url('images/banner-sinergia-aniversario.png');"></div>
 									</div>
 								</div> -->
+								<div id="salones" class="swiper-slide dark" style="cursor: pointer;">
+									<a  href="documentos/Distribucion-salones-2023-1.pdf" download>
+										<div class="swiper-slide-bg" style="background-image: url('images/EncuentraTuSalon.png');"></div>
+									</a>
+								</div>
+
+								
 								<div class="swiper-slide dark">
 									<div class="container">
 										<div class="slider-caption slider-caption-center">
@@ -738,6 +745,16 @@
 	<script type="text/javascript">
 		$("#anuncio").on("click",function(e){
 			e.preventDefault();
+		});
+
+		$("#salones").on("click",function(e){
+			const a = document.createElement('a');
+			const url = 'documentos/Distribucion-salones-2023-1.pdf';
+			a.href = url;
+			a.download = url;
+			document.body.appendChild(a);
+			a.click();
+			document.body.removeChild(a);
 		});
 	</script>
 	<script type="text/javascript">
